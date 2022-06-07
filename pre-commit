@@ -1,0 +1,15 @@
+#!/bin/bash
+
+regex='@compagny\.com$'
+email=$GIT_AUTHOR_EMAIL
+
+if [[$email =~ $regex]];
+then
+	echo "Your email, $email, is ok"
+	exit 0
+else
+	echo "Your email, $email, is not ok"
+	exit 1
+fi
+
+	

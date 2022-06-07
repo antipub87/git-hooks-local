@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Thanks for committer $GIT_AUTHOR_NAME"
+
+exit 0
